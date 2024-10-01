@@ -1,0 +1,59 @@
+#Die YAML Datei ist dafür da, die angezeigte Website zu definieren und die Infrastruktur dafür darzustellen. (Gut lesbar für Mensch und Maschine)
+
+site_name: MkDocs Workshop
+#site_name: Dies ist der Name der Website, die du mit MkDocs erstellst
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - attr_list
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+#markdown_extensions: Hier definierst du, welche Erweiterungen für die Markdown-Dateien aktiviert sind. Diese erweitern die Standard-Markdown-Syntax um zusätzliche Funktionen.
+  
+theme:
+#theme: Definiert das Design der Website.
+  name: material
+  language: de
+  font: false
+  favicon: /logo/logo.png
+  logo: /logo/logo.png
+  icon:
+
+site_author: "MkDocs Workshop ersteller"
+#site_author: Gibt den Autor der Website an. 
+
+nav:
+  - Home : index.md
+  - MkDocs Erklärung : MkDocsErklaerung.md
+  - MkDocs Prinzip: Mkdocsprinzip.md
+  - YML-Datei : ymldatei.md
+  - MkDocs-Server : MkDocs-Server.md
+  - GitHub anmelden : Githubanmeldung.md
+  - Git Repositorys : Gitrepositorys.md
+  - Aufgaben : aufgaben.md
+  - Feedback : Relflexion.md
+  - Lösungen : 
+    - Gliederung Lösung : Gliederung loesung.md
+    - Unterseiten Lösung : Unterseiten Loesung.md
+    - Aufzählungen Lösung : Aufzaehlung Loesung.md
+    - Hinweisboxen Lösung : Hinweisboxen Loesung.md
+    - Tabellen Lösung : Tabellen Loesung.md
+    - Verzeichnisse Lösung : Verzeichnisse Loesung.md
+    - Bilder Lösung : bilder Loesung.md
+    - Flussgraphen Lösung : Flussgraphen Loesung.md
+    - Impressum Lösung : Impressum Loesung.md
+    - LaTeX Lösung : Latex loesung.md
+    - Fußnoten Lösung : Fußnoten loesung.md
+    - automatisch nummerierte Abbildung Lösung : Automatisch nummerierte Lösung.md
+
+#nav: Hier wird die Navigation der Website festgelegt. Sie definiert die Struktur des Menüs, das dem Nutzer auf der Website angezeigt wird.
+#Beispiel: Der Menüpunkt "Home" zeigt den Inhalt von index.md an, und "MkDocs Erklärung" zeigt den Inhalt von MkDocsErklaerung.md an
